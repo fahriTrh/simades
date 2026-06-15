@@ -7,6 +7,9 @@ use App\Http\Controllers\TemplateSuratController;
 use App\Http\Controllers\WargaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AkunController;
+use App\Models\Warga;
+use App\Models\ArsipSurat;
+use App\Models\TemplateSurat;
 
 
 
@@ -31,8 +34,42 @@ Route::middleware(['auth'])->group(function () {
     // end authentication
 
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        $totalWarga     = Warga::count();
+        $totalTemplate  = TemplateSurat::count();
+        $totalArsip     = ArsipSurat::count();
+        $suratBulanIni  = ArsipSurat::whereMonth('created_at', now()->month)
+            ->whereYear('created_at', now()->year)
+            ->count();
+        $suratTerbaru   = ArsipSurat::with(['warga', 'template'])
+            ->latest()
+            ->limit(5)
+            ->get()
+            ->map(function ($arsip) {
+                return (object)[
+                    'nama_warga'  => $arsip->warga->nama ?? '-',
+                    'jenis_surat' => $arsip->template->nama_template ?? '-',
+                    'created_at'  => $arsip->created_at,
+                ];
+            });
+
+        $suratTerbanyak = ArsipSurat::with('template')
+            ->get()
+            ->groupBy(fn($a) => $a->template->nama_template ?? 'Lainnya')
+            ->map->count()
+            ->sortDesc()
+            ->take(4);
+
+        return view('dashboard', compact(
+            'totalWarga',
+            'totalTemplate',
+            'totalArsip',
+            'suratBulanIni',
+            'suratTerbaru',
+            'suratTerbanyak'
+        ));
     })->name('dashboard');
+
+
 
     // warga
 

@@ -20,7 +20,7 @@
             <p class="text-forest-300 text-sm mt-1.5">
                 Kelola data warga dan administrasi surat desa dengan mudah.
             </p>
-            <a href="" class="mt-4 inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-white/20">
+            <a href="/generate" class="mt-4 inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-white/20">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
@@ -171,7 +171,7 @@
                     <h4 class="font-bold text-forest-900">Aksi Cepat</h4>
                 </div>
                 <div class="p-4 grid grid-cols-2 gap-3">
-                    <a href="" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-forest-50 hover:bg-forest-100 transition-colors group text-center">
+                    <a href="/generate" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-forest-50 hover:bg-forest-100 transition-colors group text-center">
                         <div class="w-10 h-10 rounded-xl bg-forest-600 group-hover:bg-forest-700 flex items-center justify-center transition-colors shadow">
                             <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
@@ -179,7 +179,7 @@
                         </div>
                         <span class="text-xs font-semibold text-forest-800">Generate Surat</span>
                     </a>
-                    <a href="" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors group text-center">
+                    <a href="/warga/tambah" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors group text-center">
                         <div class="w-10 h-10 rounded-xl bg-blue-600 group-hover:bg-blue-700 flex items-center justify-center transition-colors shadow">
                             <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
@@ -187,7 +187,7 @@
                         </div>
                         <span class="text-xs font-semibold text-blue-800">Tambah Warga</span>
                     </a>
-                    <a href="" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-earth-50 hover:bg-earth-100 transition-colors group text-center">
+                    <a href="/template/tambah" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-earth-50 hover:bg-earth-100 transition-colors group text-center">
                         <div class="w-10 h-10 rounded-xl bg-earth-500 group-hover:bg-earth-600 flex items-center justify-center transition-colors shadow">
                             <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v6m3-3H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
@@ -195,7 +195,7 @@
                         </div>
                         <span class="text-xs font-semibold text-earth-800">Tambah Template</span>
                     </a>
-                    <a href="" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-violet-50 hover:bg-violet-100 transition-colors group text-center">
+                    <a href="/arsip" class="flex flex-col items-center gap-2 p-3 rounded-xl bg-violet-50 hover:bg-violet-100 transition-colors group text-center">
                         <div class="w-10 h-10 rounded-xl bg-violet-600 group-hover:bg-violet-700 flex items-center justify-center transition-colors shadow">
                             <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
@@ -212,19 +212,19 @@
                     <h4 class="font-bold text-forest-900 text-sm">Surat Terbanyak</h4>
                 </div>
                 <div class="p-4 space-y-3">
-                    @foreach ([
-                    ['Ket. Domisili', 38, 'bg-forest-500'],
-                    ['Ket. Tdk Mampu', 24, 'bg-earth-400'],
-                    ['Pengantar KTP', 18, 'bg-blue-500'],
-                    ['Ket. Usaha', 12, 'bg-violet-500'],
-                    ] as $item)
+                    @php
+                    $colors = ['bg-forest-500', 'bg-earth-400', 'bg-blue-500', 'bg-violet-500'];
+                    $maxVal = $suratTerbanyak->max() ?: 1;
+                    @endphp
+                    @foreach ($suratTerbanyak as $nama => $jumlah)
+                    @php $color = $colors[$loop->index % count($colors)]; @endphp
                     <div>
                         <div class="flex justify-between text-xs mb-1">
-                            <span class="text-gray-600 font-medium">{{ $item[0] }}</span>
-                            <span class="text-gray-400">{{ $item[1] }}</span>
+                            <span class="text-gray-600 font-medium">{{ Str::limit($nama, 20) }}</span>
+                            <span class="text-gray-400">{{ $jumlah }}</span>
                         </div>
                         <div class="h-1.5 bg-gray-100 rounded-full">
-                            <div class="progress-bar h-1.5 {{ $item[2] }} rounded-full" style="width: {{ $item[1] }}%"></div>
+                            <div class="progress-bar h-1.5 {{ $color }} rounded-full" style="width: {{ round($jumlah / $maxVal * 100) }}%"></div>
                         </div>
                     </div>
                     @endforeach
