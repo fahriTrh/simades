@@ -6,6 +6,7 @@ use App\Http\Controllers\GenerateSuratController;
 use App\Http\Controllers\TemplateSuratController;
 use App\Http\Controllers\WargaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AkunController;
 
 
 
@@ -74,6 +75,11 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/arsip/{arsip}', [ArsipSuratController::class, 'destroy'])->name('arsip.destroy');
 
     // end arsip surat
+
+    // akun
+    Route::get('/akun',  [AkunController::class, 'index'])->name('akun.index');
+    Route::put('/akun',  [AkunController::class, 'update'])->name('akun.update');
+    // end akun
 
 
 });
